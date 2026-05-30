@@ -1,0 +1,72 @@
+body {
+  background-color: black;
+  color: red;
+}
+
+header{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.site-header{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.fire-border-row{
+  display: flex;
+  justify-content: center;
+ 
+}  
+.fire-border{
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.blinkies-top{
+  display: flex;
+  justify-content: center;
+}
+
+.main-site-body{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 25px;
+  margin: 25px 0px 25px 0px;
+}
+
+main{
+  border-style: solid;
+  border-color: red;
+}
+aside{
+  border-style: solid;
+  border-color: red;
+}
+
+
+
+.main-body-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-section-box{
+  border-style: solid;
+  border-color: red;
+  margin: 0px 25px 25px 25px
+}
+
+.greeting{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.section-header{
+  text-align: center;
+}
