@@ -28,25 +28,43 @@ header{
 .blinkies-top{
   display: flex;
   justify-content: center;
+  margin-bottom: 2px;
 }
 
 .main-site-body{
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
   gap: 25px;
-  margin: 25px 0px 25px 0px;
+  margin: 0vh 15vw 0vh 15vw ;
 }
 
 main{
   border-style: solid;
   border-color: red;
 }
-aside{
+
+nav{
   border-style: solid;
   border-color: red;
 }
 
 
+/*Scrapped guest book embed*/
+/*.guest-book{*/
+/*  border-style: solid;*/
+/*  border-color: red;*/
+/*}*/
+
+.nav-header{
+  background-color:red;
+  color:black;
+  margin: 0;
+  padding: 5px 5px 5px 10px;
+}
+
+/*.guest-book-frame{*/
+/*  border: none;*/
+/*}*/
 
 .main-body-content{
   display: grid;
@@ -54,8 +72,10 @@ aside{
 }
 
 .main-section-box{
+  /*
   border-style: solid;
   border-color: red;
+  border-width: 1px;*/
   margin: 0px 25px 25px 25px
 }
 
@@ -67,6 +87,37 @@ aside{
   margin-bottom: 10px;
 }
 
-.section-header{
-  text-align: center;
+.main-body-section-header{
+  background-color: red;
+  color: black;
+  padding: 5px 5px 5px 10px;
+  margin-left: 10px;
+}
+
+.text-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/*marquee*/
+.marquee-wrapper{
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track{
+  display:flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
